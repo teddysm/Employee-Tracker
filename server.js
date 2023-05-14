@@ -1,1 +1,2 @@
-const inquirer = require('Inquirer');
+const inquirer = require('inquirer');
+
