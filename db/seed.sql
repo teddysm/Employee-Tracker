@@ -6,7 +6,6 @@ VALUES ("Sales"),
        ("Finance"), 
        ("Legal");
 
-
 INSERT INTO role(title, department_id, salary)
 VALUES ("Sales Lead", 1, 100000),
        ("Salesperson", 1, 80000),
@@ -26,5 +25,3 @@ VALUES ("John", "Doe", 1, NULL),
        ("Malia", "Brown", 6, 5),
        ("Sarah", "Lourd", 7, NULL),
        ("Tom", "Allen", 8, 7);
-
-
