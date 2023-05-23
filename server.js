@@ -104,49 +104,6 @@ const employeePrompt = async() => {
   console.log("New employee successfully added!");
 };
 
-
-  // const prompts = [
-  //   {
-  //     type: "input",
-  //     message: "Employee's first name?",
-  //     name: "firstName"
-  //   },
-  //   {
-  //     type: "input",
-  //     message: "Employee's last name?",
-  //     name: "lastName"
-  //   },
-  //   {
-  //     type: "list",
-  //     message: "Employee's role?",
-  //     choices: (await db.promise().query("SELECT id, title from role"))[0].map(obj=>{ return {name: obj.title, value:obj.id} }),
-  //     name: "role"
-  //   },
-  //   {
-  //     type: "list",
-  //     message: "Employee's manager?",
-  //     choices: (await db.promise().query("SELECT id, CONCAT(first_name, ' ', last_name) as manager FROM employee"))[0].map(obj=>{ return {name:obj.manager, value:obj.id} }),
-  //     name: "manager"
-  //   },
-  // ];
-
-  // inquirer can take choices: [str,str,str...]
-  // can also take choices [{name,value}, {name,value},...] where name is what's displayed to user
-  // ... and value is what we handle in the app
-  
-  // inquirer.prompt(prompts).then(data=>{
-  //   const firstName = data.firstName
-  //   const lastName = data.lastName
-  //   const role = data.role;
-  //   const manager = data.manager;
-  //   db.query(`INSERT INTO employee(first_name, last_name, role_id, manager_id) VALUES (${firstName}, ${lastName}, ${role}, ${manager})`);
-  // })
-
-
-
-
-
-
 async function init() {
   console.log("Welcome to Employee Tracker.\n");
   // console.log("\nWhat would you like to do today?");
@@ -256,3 +213,45 @@ async function init() {
 }
 
 init();
+
+
+
+
+  // const prompts = [
+  //   {
+  //     type: "input",
+  //     message: "Employee's first name?",
+  //     name: "firstName"
+  //   },
+  //   {
+  //     type: "input",
+  //     message: "Employee's last name?",
+  //     name: "lastName"
+  //   },
+  //   {
+  //     type: "list",
+  //     message: "Employee's role?",
+  //     choices: (await db.promise().query("SELECT id, title from role"))[0].map(obj=>{ return {name: obj.title, value:obj.id} }),
+  //     name: "role"
+  //   },
+  //   {
+  //     type: "list",
+  //     message: "Employee's manager?",
+  //     choices: (await db.promise().query("SELECT id, CONCAT(first_name, ' ', last_name) as manager FROM employee"))[0].map(obj=>{ return {name:obj.manager, value:obj.id} }),
+  //     name: "manager"
+  //   },
+  // ];
+
+  // inquirer can take choices: [str,str,str...]
+  // can also take choices [{name,value}, {name,value},...] where name is what's displayed to user
+  // ... and value is what we handle in the app
+  
+  // inquirer.prompt(prompts).then(data=>{
+  //   const firstName = data.firstName
+  //   const lastName = data.lastName
+  //   const role = data.role;
+  //   const manager = data.manager;
+  //   db.query(`INSERT INTO employee(first_name, last_name, role_id, manager_id) VALUES (${firstName}, ${lastName}, ${role}, ${manager})`);
+  // })
+
+
