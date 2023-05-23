@@ -1,11 +1,9 @@
--- show roles with salary
 SELECT role.id, role.title, 
        role.salary, department.name 
 FROM role INNER JOIN department 
 ON role.department_id = department.id
 ORDER BY role.id;
 
--- ascending and descending sort in mysql shell/mysql2 
 
 SELECT role.id, employee.first_name, employee.last_name, role.title, department.name AS department, 
        role.salary,CONCAT(manager.first_name, " ", manager.last_name) AS manager
