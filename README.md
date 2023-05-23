@@ -1,4 +1,5 @@
 # Employee-Tracker
+
 This is a command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
 <br>
@@ -27,8 +28,12 @@ This is a command-line application to manage a company's employee database, usin
 
 - Use Mysql to run the schema and the seed SQL files
 - Start the program with 'npm start'
-![Screenshot](./)
-![Screenshot](./)
+  ![Screenshot](./assets/Screenshot1.png)
+  ![Screenshot](./assets/Screenshot2.png)
+  ![Screenshot](./assets/Screenshot3.png)
+  ![Screenshot](./assets/Screenshot4.png)
+  ![Screenshot](./assets/Screenshot5.png)
+  ![Screenshot](./assets/Screenshot6.png)
 
 <br>
 
@@ -37,7 +42,6 @@ This is a command-line application to manage a company's employee database, usin
 - Github page: https://github.com/teddysm/Employee-Tracker
 - Heroku deployed link: https://warm-forest-55831.herokuapp.com/
 - Video walkthrough: https://drive.google.com/file/d/1uj-EOwVwclUagV6Fe3fXSDA2Wu3r2tqS/view/
-
 
 <br>
 
@@ -80,5 +84,5 @@ THEN I am prompted to enter the name, salary, and department for the role and th
 WHEN I choose to add an employee
 THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
 WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 ```
