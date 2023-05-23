@@ -40,14 +40,13 @@ This is a command-line application to manage a company's employee database, usin
 ## Links
 
 - Github page: https://github.com/teddysm/Employee-Tracker
-- Heroku deployed link: https://warm-forest-55831.herokuapp.com/
 - Video walkthrough: https://drive.google.com/file/d/1uj-EOwVwclUagV6Fe3fXSDA2Wu3r2tqS/view/
 
 <br>
 
 ## Features
 
-- User can view all employees, Add Employee, Update Employee Role, View All Role, Add Role, View All Department, and Add Department",
+- User can view all employees, Add Employee, Update Employee Role, View All Role, Add Role, View All Department, and Add Department.
 
 <br>
 
