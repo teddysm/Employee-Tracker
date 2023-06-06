@@ -41,6 +41,7 @@ This is a command-line application to manage a company's employee database, usin
 
 - Github page: https://github.com/teddysm/Employee-Tracker
 - Video walkthrough: https://drive.google.com/file/d/1uj-EOwVwclUagV6Fe3fXSDA2Wu3r2tqS/view
+- Or: https://app.screencastify.com/manage/videos/MuiYre8Zaje3H612S9hl
 
 <br>
 
