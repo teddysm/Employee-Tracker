@@ -140,7 +140,9 @@ const employeePrompt = async () => {
 
 async function init() {
   const ui = new inquirer.ui.BottomBar();
-  ui.log.write("------------------------------------------------------------------------------------");
+  ui.log.write(
+    "------------------------------------------------------------------------------------"
+  );
   console.log("Welcome to Employee Tracker.\n");
   const response = await inquirer.prompt([
     {
@@ -173,15 +175,19 @@ async function init() {
       break;
     case "4. View All Role":
       // view all role
-      db.query("SELECT title FROM role", (err, results) => {
-        if (err) {
-          console.log(err);
-          return;
+      db.query(
+        "SELECT title AS role_title, department.name AS department  FROM role INNER JOIN department ON role.department_id = department.id;",
+        (err, results) => {
+          if (err) {
+            console.log(err);
+            return;
+          }
+          console.table(results);
+          init();
         }
-        console.table(results);
-        init();
-      });
+      );
       break;
+
     case "5. Add Role":
       // add a new role
       const res = await inquirer.prompt([
@@ -261,4 +267,3 @@ async function init() {
 
 // start the program
 init();
-
